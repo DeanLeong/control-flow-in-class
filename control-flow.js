@@ -143,8 +143,8 @@ let age = 22
 //   init++
 // }
 
-const food = ['tacos', 'burritos', 'pizza', 'soup', 'pasta']
-console.log(food.length) // length = 5
+// const food = ['tacos', 'burritos', 'pizza', 'soup', 'pasta']
+// console.log(food.length) // length = 5
 
 // for (let i = 0; i < food.length; i++) {
 //   // console.log(`This is the index: ${i}, This is my value: ${food[i]}`)
@@ -178,11 +178,24 @@ const wizards = [
 ]
  
 
-for (let i = 0; i < wizards.length; i++) {
-  if (wizards[i].house === "Gryffindor") {
-    console.log(`Welcome to the party ${wizards[i].name}`)
+// for (let i = 0; i < wizards.length; i++) {
+//   if (wizards[i].house === "Gryffindor") {
+//     console.log(`Welcome to the party ${wizards[i].name}`)
+//   }
+//   // console.log(wizards[i].name)
+//   // console.log(wizards[i].house)
+//   // console.log(`My name is ${wizards[i].name}, I am in house ${wizards[i].house}`)
+// }
+
+
+const food = ['tacos', 'burritos', 'pizza', 'soup', 'pasta']
+
+for (let i = 0; i < food.length; i++) {
+  // console.log(food[i])
+  switch (food[i]) {
+    case 'burritos':
+      console.log(`This is my favorite food: ${food[i]}`)
+      break;
   }
-  // console.log(wizards[i].name)
-  // console.log(wizards[i].house)
-  // console.log(`My name is ${wizards[i].name}, I am in house ${wizards[i].house}`)
 }
+
